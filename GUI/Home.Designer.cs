@@ -28,18 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dgvSP = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvSP).BeginInit();
             SuspendLayout();
+            // 
+            // dgvSP
+            // 
+            dgvSP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvSP.Location = new Point(12, 12);
+            dgvSP.Name = "dgvSP";
+            dgvSP.Size = new Size(776, 426);
+            dgvSP.TabIndex = 0;
             // 
             // fHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dgvSP);
             Name = "fHome";
             Text = "Tên App";
+            ((System.ComponentModel.ISupportInitialize)dgvSP).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private DataGridView dgvSP;
     }
 }
