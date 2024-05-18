@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLTiemVang", "QLTiemVang.csproj", "{99CFC50D-71D6-4A5C-B3E8-C79C5BEFC3DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99CFC50D-71D6-4A5C-B3E8-C79C5BEFC3DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CFC50D-71D6-4A5C-B3E8-C79C5BEFC3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CFC50D-71D6-4A5C-B3E8-C79C5BEFC3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CFC50D-71D6-4A5C-B3E8-C79C5BEFC3DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83434624-A6BE-42A1-BACE-4BF3C4A43F9C}
+	EndGlobalSection
+EndGlobal
