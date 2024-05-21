@@ -35,18 +35,22 @@
             // dgvSP
             // 
             dgvSP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvSP.Location = new Point(12, 12);
+            dgvSP.Location = new Point(14, 16);
+            dgvSP.Margin = new Padding(3, 4, 3, 4);
             dgvSP.Name = "dgvSP";
-            dgvSP.Size = new Size(776, 426);
+            dgvSP.RowHeadersWidth = 51;
+            dgvSP.Size = new Size(887, 568);
             dgvSP.TabIndex = 0;
+            dgvSP.CellContentClick += dgvSP_CellContentClick;
             // 
             // fHome
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(dgvSP);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "fHome";
             Text = "Tên App";
             FormClosing += fHome_FormClosing;

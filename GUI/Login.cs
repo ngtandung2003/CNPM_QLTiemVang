@@ -32,7 +32,7 @@ namespace QLTiemVang.GUI
             if (Login(username, password))
             {
                 this.Hide();
-                fHome f = new fHome();
+                InventoryReport f = new InventoryReport();
                 f.ShowDialog();
                 this.Close();
             }
