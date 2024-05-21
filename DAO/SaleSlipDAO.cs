@@ -21,6 +21,17 @@ namespace QLTiemVang.DAO
 
         private SaleSlipDAO() { }
 
+        public int CountSaleSlip()
+        {
+            string query = "select Count(MaPhieuMuaHang) from PHIEUMUAHANG";
+
+            object data = DataProvider.Instance.ExecuteScalar(query);
+            int count = (int)data;
+
+            return count;
+        }
+
+
        //public void InsertSlip()
        // {
        //     string query = "EXEC ThemPhieuBanHang @SoPhieu , @NgayLap , @MaKhachHang , @MaSanPham , @LoaiSanPham , @SoLuong , @DonViTinh , @DonGia";

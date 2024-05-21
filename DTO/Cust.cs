@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace QLTiemVang.DTO
 {
-    class Customer
+    public class Cust
     {
-        public Customer(string iD, string name, string phoneNum)
+        public Cust(string iD="", string name="", string phoneNum = "")
         {
             this.iD=iD;
             this.name=name;
