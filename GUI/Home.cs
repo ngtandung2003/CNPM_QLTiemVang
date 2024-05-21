@@ -17,7 +17,7 @@ namespace QLTiemVang.GUI
         public fHome()
         {
             InitializeComponent();
-            LoadSP();
+            //LoadSP();
         }
 
         void LoadSP()
@@ -45,6 +45,11 @@ namespace QLTiemVang.GUI
             {
                 e.Cancel = true;
             }
+        }
+
+        private void fHome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

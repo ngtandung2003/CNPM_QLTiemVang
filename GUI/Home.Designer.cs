@@ -50,6 +50,7 @@
             Name = "fHome";
             Text = "Tên App";
             FormClosing += fHome_FormClosing;
+            Load += fHome_Load;
             ((System.ComponentModel.ISupportInitialize)dgvSP).EndInit();
             ResumeLayout(false);
         }

@@ -32,7 +32,8 @@ namespace QLTiemVang.GUI
             if (Login(username, password))
             {
                 this.Hide();
-                fHome f = new fHome();
+                //fHome f = new fHome();
+                fSaleSlip f = new fSaleSlip();
                 f.ShowDialog();
                 this.Close();
             }
