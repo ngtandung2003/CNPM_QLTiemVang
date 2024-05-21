@@ -32,9 +32,19 @@ namespace QLTiemVang.GUI
                                 and SANPHAM.MaDonViTinh = DONVITINH.MaDonViTinh";
 
             dgvSP.DataSource = DataProvider.Instance.ExecuteQuery(query);
-            
+
+        }
+        private void b_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
-
+        private void fHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Ban có thực sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

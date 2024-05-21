@@ -44,10 +44,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             ClientSize = new Size(800, 450);
             Controls.Add(dgvSP);
             Name = "fHome";
             Text = "Tên App";
+            FormClosing += fHome_FormClosing;
             ((System.ComponentModel.ISupportInitialize)dgvSP).EndInit();
             ResumeLayout(false);
         }

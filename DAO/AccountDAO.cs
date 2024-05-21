@@ -30,6 +30,5 @@ namespace QLTiemVang.DAO
 
             return result.Rows.Count > 0;
         }
-
     }
 }

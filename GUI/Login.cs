@@ -28,13 +28,14 @@ namespace QLTiemVang.GUI
         {
             string username = tb_Username.Text;
             string password = tb_Password.Text;
+
             if (Login(username, password))
             {
                 this.Hide();
                 fHome f = new fHome();
                 f.ShowDialog();
-                this.Show();
-            } 
+                this.Close();
+            }
             else
             {
                 MessageBox.Show("Sai mã nhân viên hoặc mật khẩu!");
@@ -43,15 +44,14 @@ namespace QLTiemVang.GUI
 
         bool Login(string username, string password)
         {
-            return AccountDAO.Instance.Login(username, password);
+            //return AccountDAO.Instance.Login(username, password);
+            return true;
         }
 
-        private void fLogin_FormClosing(object sender, FormClosingEventArgs e)
+
+        private void fLogin_Load(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Ban có thực sự muốn thoát chương trình?", "Thông báo", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
-            {
-                e.Cancel = true;
-            }
+
         }
     }
 }
